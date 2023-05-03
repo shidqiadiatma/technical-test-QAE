@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>List single user</name>
+   <name>GET list single user</name>
    <tag></tag>
    <elementGuidId>57cddafa-c009-47db-a8b9-676d9e96073e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.BaseURL}/api/users/2</restUrl>
+   <restUrl>${GlobalVariable.BaseURL}/api/users/1</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -36,6 +36,8 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+WS.verifyElementPropertyValue(response, &quot;data.email&quot;, &quot;george.bluth@reqres.in&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Register successfull</name>
+   <name>PUT update</name>
    <tag></tag>
-   <elementGuidId>a477d947-0910-4898-9a6a-ddf9617e90a5</elementGuidId>
+   <elementGuidId>0df6a84d-4f1c-4032-ad97-bd939ec5f6a7</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;email\&quot;: \&quot;janet.weaver@reqres.in\&quot;,\n    \&quot;password\&quot;: \&quot;pistol\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;Shidqi Adiatma\&quot;,\n    \&quot;job\&quot;: \&quot;QA Engineer\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,13 +21,13 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>62892480-a668-459c-a2eb-ee013915960b</webElementGuid>
+      <webElementGuid>3262fdb1-5e78-4ec7-b348-c94175946ef0</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.BaseURL}/api/register</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${GlobalVariable.BaseURL}/api/users/2</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
